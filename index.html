@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenon WA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Kenon WhatsApp</h1>
+    <input type="text" id="nomor" placeholder="Masukkan Nomor WhatsApp">
+    <button onclick="kenon()">Kirim</button>
+
+    <div id="notif" class="hidden">
+      <p class="prank-text">Tapi boong, bagi sedekah nya dong</p>
+      <img src="qris.jpg" alt="QRIS" class="qris-img" onclick="zoomQRIS(this)">
+      <p class="kirim-info">Kalo udah tf kirim ke nomor ini:</p>
+      <a href="https://wa.me/6288973461209?text=Halo%2C%20saya%20ingin%20mengirim%20bukti%20QRIS%20ya" target="_blank" class="wa-link">Klik untuk kirim WA</a>
+    </div>
+  </div>
+
+  <!-- Modal Zoom QRIS -->
+  <div id="qrisModal" class="modal hidden">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="qrisZoom">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
