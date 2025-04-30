@@ -6,6 +6,9 @@ function kenon() {
   }
   
   document.getElementById('notif').classList.remove('hidden');
+  const audio = document.getElementById("sound");
+audio.currentTime = 0;
+audio.play();
 }
 
 function zoomQRIS(img) {
